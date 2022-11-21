@@ -1,0 +1,192 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #EEEEEE;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #EEEEEE;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+  z-index: 0;
+}
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.5);
+}
+body::-webkit-scrollbar-thumb {
+  background: rgba(51, 51, 51, 0.2);
+  border-radius: 10px;
+}
+
+header {
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #111133), to(#334));
+  background: linear-gradient(#111133 70%, #334);
+  z-index: 3;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.7);
+}
+header figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left top, left bottom, from(#CCC), color-stop(#FFF), to(#DDD));
+  background: linear-gradient(#CCC, #FFF, #DDD);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  padding: 20px;
+}
+header figure:hover {
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+header figure img {
+  height: 90px;
+  display: block;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+header figure img:hover {
+  height: 100px;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  cursor: pointer;
+}
+header nav {
+  position: sticky;
+  top: 0;
+  border-top: 5px solid #999;
+  border-bottom: 5px solid #888;
+  margin-top: 0;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+header nav ul li {
+  width: 100%;
+}
+header nav ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav ul li a:hover {
+  background: #353550;
+  text-decoration: underline;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
+
+main {
+  margin-top: 170px;
+  margin-bottom: 120px;
+  height: 1000px;
+}
+main .banner {
+  background: #22222A;
+}
+main .banner img {
+  display: block;
+  max-width: 1000px;
+  margin: auto;
+  width: 100%;
+}
+main div {
+  display: none;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 90px;
+  border-radius: 30px;
+}
+main .gmap-canvas {
+  border: 10px solid #777;
+}
+main p {
+  padding: 20px;
+}
+
+footer {
+  color: #DDD;
+  background: -webkit-gradient(linear, left top, left bottom, from(#223), to(#002));
+  background: linear-gradient(#223, #002);
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  font-size: 0.85rem;
+  border-top: 5px solid #666;
+  -webkit-box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.8);
+  padding-bottom: 20px;
+  max-height: 120px;
+}
+footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  padding-right: 20px;
+}
+footer nav ul {
+  height: auto;
+}
+footer nav ul li {
+  font-weight: bold;
+}
+footer nav ul li a {
+  font-weight: 100;
+  font-size: 0.85rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+footer nav ul li a:hover {
+  font-size: 0.9rem;
+  text-decoration: underline;
+  color: #87879e;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
